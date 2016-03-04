@@ -15,7 +15,7 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- <script src="table_pagination.js"></script> -->
-    <script src="jq_plugin.js"></script>
+    <script src="./dist/js/jq_table-pagination.js"></script>
     <style>
         .search_input{
             width: 100px;
@@ -33,7 +33,7 @@
                         <tr>
                             <td><?php  echo $i + 1; ?></td>
                             <td><?php  echo printf("%013d", $i) ?></td>
-                            <td>测试</td>
+                            <td>GAMELIFE</td>
                             <td>测试</td>
                             <td>测试</td>
                         </tr>
@@ -45,7 +45,7 @@
     </div>
     <script>
         // table_pagination($("table"));
-        $("table").tablePagination({pageSize: 20, searchInputClass: "search_input"});
+        $("table").tablePagination({pageSize: 20, searchInputClass: "search_input", pageSizeChoose: [10,20,30,40,50]});
     </script>
 </body>
 </html>
